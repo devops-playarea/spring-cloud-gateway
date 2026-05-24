@@ -161,6 +161,7 @@
 		<module>spring-cloud-starter-gateway-server-webflux</module>
 		<module>spring-cloud-starter-gateway-server-webmvc</module>
 		<module>spring-cloud-gateway-sample</module>
+		<module>gateway-webmvc-app</module>
 		<module>spring-cloud-gateway-integration-tests</module>
 		<module>docs</module>
 	</modules>
@@ -198,6 +199,7 @@
 								<artifact>httpclient</artifact>
 								<artifact>mvc-failure-analyzer</artifact>
 								<artifact>spring-cloud-gateway-sample</artifact>
+								<artifact>gateway-webmvc-app</artifact>
 							</excludeArtifacts>
 						</configuration>
 					</plugin>

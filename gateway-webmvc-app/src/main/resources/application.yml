@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gateway-webmvc-app
+  cloud:
+    gateway:
+      server:
+        webmvc:
+          function:
+            enabled: false
+          routesMap:
+            httpbin:
+              uri: ${GATEWAY_HTTPBIN_URI:http://httpbin.org:80}
+              predicates:
+                - Path=/httpbin/**
+              filters:
+                - StripPrefix=1
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
