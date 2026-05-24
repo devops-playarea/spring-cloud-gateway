@@ -50,6 +50,7 @@ import static org.springframework.cloud.gateway.server.mvc.handler.HandlerFuncti
 @Testcontainers
 public class StreamHandlerTests {
 
+	/** RabbitMQ test container. */
 	@Container
 	@ServiceConnection
 	public static RabbitMQContainer rabbitmq = new RabbitMQContainer("rabbitmq:3.7.25-management-alpine");

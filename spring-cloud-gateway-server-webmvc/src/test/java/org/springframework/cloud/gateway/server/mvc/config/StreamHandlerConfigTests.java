@@ -48,6 +48,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Testcontainers
 public class StreamHandlerConfigTests {
 
+	/** RabbitMQ test container. */
 	@Container
 	@ServiceConnection
 	public static RabbitMQContainer rabbitmq = new RabbitMQContainer("rabbitmq:3.7.25-management-alpine");

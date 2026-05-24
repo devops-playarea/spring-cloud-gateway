@@ -25,6 +25,10 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 public class GatewayWebMvcApplication {
 
 	public static void main(String[] args) {
+		new GatewayWebMvcApplication().run(args);
+	}
+
+	void run(String[] args) {
 		SpringApplication.run(GatewayWebMvcApplication.class, args);
 	}
 

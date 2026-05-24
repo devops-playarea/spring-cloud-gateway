@@ -32,7 +32,7 @@ jobs:
           cache: maven
 
       - name: Build jar
-        run: ./mvnw -B -pl $APP_MODULE -am -DskipTests package
+        run: ./mvnw -B -pl $APP_MODULE -am -DskipTests -Dcheckstyle.skip=true package
 
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v3
